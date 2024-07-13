@@ -109,7 +109,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .parallax {
   position: relative;
   height: 130vh;
