@@ -1,6 +1,5 @@
 import { defineComponent } from 'vue';
 <template>
-  <nav></nav>
   <router-view />
 </template>
 
