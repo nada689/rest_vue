@@ -1,159 +1,209 @@
 <template>
-  <section class="parallax">
-    <h1 id="text">parallax website</h1>
-    <img src="../assets/gate-left.png" id="gate-left" />
-    <img src="../assets/gate-right.png" id="gate-right" />
-    <img src="../assets/tree-left.png" id="tree-left" />
-    <img src="../assets/tree-right.png" id="tree-right" />
-    <img src="../assets/grass.png" id="grass" />
-  </section>
-  <section class="sec">
-    <h2>parallax scrolling website</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies
-      sem ut est cursus molestie. Sed quis elit aliquet, efficitur nisi eu,
-      dignissim leo. Phasellus a convallis dui. Proin feugiat ac massa sed
-      porttitor. Donec eu sem sagittis, condimentum ex id, aliquet est. Maecenas
-      condimentum egestas odio, a consectetur metus tempus ut. Morbi metus ante,
-      malesuada vitae sodales vitae, feugiat vel quam. Quisque egestas commodo
-      ex. Nulla porttitor tortor velit, quis sodales leo lobortis sit amet.
-      Donec quis nibh quis ante fermentum vulputate at quis nisl. Phasellus
-      egestas ligula ut convallis egestas. Integer porttitor finibus dui
-      eleifend mattis. Integer pharetra eleifend accumsan. Quisque placerat
-      dolor vitae elementum imperdiet. Curabitur lorem nibh, pretium vitae
-      mattis a, ornare et odio. Maecenas non ullamcorper tortor. Vestibulum at
-      quam dignissim, iaculis quam nec, imperdiet diam. Praesent tincidunt sit
-      amet arcu vitae sagittis. Integer non volutpat ante, non ultrices purus.
-      Nam faucibus justo in leo consectetur, a suscipit metus aliquam. Nunc id
-      malesuada augue. Nullam consequat fermentum lorem, vel efficitur erat
-      tristique nec. Morbi tempor lorem velit, ut mollis elit tincidunt a. Ut
-      mollis mi euismod diam aliquam, quis fringilla leo ornare. Donec nec enim
-      cursus, luctus est in, maximus metus. Phasellus congue quam at faucibus
-      malesuada. Mauris ultrices orci ac dictum dapibus. Vivamus viverra lacus
-      felis. Integer lorem velit, placerat vitae ligula vel, fermentum bibendum
-      velit.
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies
-      sem ut est cursus molestie. Sed quis elit aliquet, efficitur nisi eu,
-      dignissim leo. Phasellus a convallis dui. Proin feugiat ac massa sed
-      porttitor. Donec eu sem sagittis, condimentum ex id, aliquet est. Maecenas
-      condimentum egestas odio, a consectetur metus tempus ut. Morbi metus ante,
-      malesuada vitae sodales vitae, feugiat vel quam. Quisque egestas commodo
-      ex. Nulla porttitor tortor velit, quis sodales leo lobortis sit amet.
-      Donec quis nibh quis ante fermentum vulputate at quis nisl. Phasellus
-      egestas ligula ut convallis egestas. Integer porttitor finibus dui
-      eleifend mattis. Integer pharetra eleifend accumsan. Quisque placerat
-      dolor vitae elementum imperdiet. Curabitur lorem nibh, pretium vitae
-      mattis a, ornare et odio. Maecenas non ullamcorper tortor. Vestibulum at
-      quam dignissim, iaculis quam nec, imperdiet diam. Praesent tincidunt sit
-      amet arcu vitae sagittis. Integer non volutpat ante, non ultrices purus.
-      Nam faucibus justo in leo consectetur, a suscipit metus aliquam. Nunc id
-      malesuada augue. Nullam consequat fermentum lorem, vel efficitur erat
-      tristique nec. Morbi tempor lorem velit, ut mollis elit tincidunt a. Ut
-      mollis mi euismod diam aliquam, quis fringilla leo ornare. Donec nec enim
-      cursus, luctus est in, maximus metus. Phasellus congue quam at faucibus
-      malesuada. Mauris ultrices orci ac dictum dapibus. Vivamus viverra lacus
-      felis. Integer lorem velit, placerat vitae ligula vel, fermentum bibendum
-      velit.
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies
-      sem ut est cursus molestie. Sed quis elit aliquet, efficitur nisi eu,
-      dignissim leo. Phasellus a convallis dui. Proin feugiat ac massa sed
-      porttitor. Donec eu sem sagittis, condimentum ex id, aliquet est. Maecenas
-      condimentum egestas odio, a consectetur metus tempus ut. Morbi metus ante,
-      malesuada vitae sodales vitae, feugiat vel quam. Quisque egestas commodo
-      ex. Nulla porttitor tortor velit, quis sodales leo lobortis sit amet.
-      Donec quis nibh quis ante fermentum vulputate at quis nisl. Phasellus
-      egestas ligula ut convallis egestas. Integer porttitor finibus dui
-      eleifend mattis. Integer pharetra eleifend accumsan. Quisque placerat
-      dolor vitae elementum imperdiet. Curabitur lorem nibh, pretium vitae
-      mattis a, ornare et odio. Maecenas non ullamcorper tortor. Vestibulum at
-      quam dignissim, iaculis quam nec, imperdiet diam. Praesent tincidunt sit
-      amet arcu vitae sagittis. Integer non volutpat ante, non ultrices purus.
-      Nam faucibus justo in leo consectetur, a suscipit metus aliquam. Nunc id
-      malesuada augue. Nullam consequat fermentum lorem, vel efficitur erat
-      tristique nec. Morbi tempor lorem velit, ut mollis elit tincidunt a. Ut
-      mollis mi euismod diam aliquam, quis fringilla leo ornare. Donec nec enim
-      cursus, luctus est in, maximus metus. Phasellus congue quam at faucibus
-      malesuada. Mauris ultrices orci ac dictum dapibus. Vivamus viverra lacus
-      felis. Integer lorem velit, placerat vitae ligula vel, fermentum bibendum
-      velit.
-    </p>
-  </section>
+  <v-layout>
+    <v-app-bar color="grey-darken-4">
+      <v-app-bar-nav-icon
+        variant="text"
+        @click="drawer = !drawer"
+        prominent
+        @click.="onOpen"
+      ></v-app-bar-nav-icon>
+
+      <v-app-bar-title>My App</v-app-bar-title>
+
+      <v-chip-group>
+        <v-chip>Chip 1</v-chip>
+
+        <v-chip>Chip 2</v-chip>
+
+        <v-chip>Chip 3</v-chip>
+      </v-chip-group>
+      <v-spacer></v-spacer>
+
+      <v-btn class="icons" icon="mdi-magnify" variant="text"></v-btn>
+
+      <v-btn class="icons" icon="mdi-filter-outline" variant="text"></v-btn>
+
+      <v-btn class="icons" variant="text"
+        ><v-badge content="3" color="error" offset-x="-8"
+          ><v-icon size="25">mdi-heart-outline</v-icon></v-badge
+        ></v-btn
+      >
+    </v-app-bar>
+
+    <v-navigation-drawer v-model="drawer" temporary left>
+      <v-list :items="items"></v-list>
+    </v-navigation-drawer>
+  </v-layout>
+  <v-container class="mt-4">
+    <v-carousel
+      height="400"
+      show-arrows="hover"
+      cycle
+      hide-delimiter-background
+      interval="3000"
+    >
+      <v-carousel-item
+        src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+        cover
+      ></v-carousel-item>
+
+      <v-carousel-item
+        src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
+        cover
+      ></v-carousel-item>
+
+      <v-carousel-item
+        src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+        cover
+      ></v-carousel-item>
+    </v-carousel>
+  </v-container>
+  <v-container
+    class="card_container d-flex align-center flex-row mt-3 justify-around"
+  >
+    <v-card
+      v-for="i in 5"
+      :key="i"
+      class="card d-flex align-center flex-column"
+      elevation="10"
+    >
+      <v-avatar color="grey-darken-3" class="mt-4"><p>NK</p></v-avatar>
+      <v-rating
+        v-model="rating"
+        length="5"
+        color="warning"
+        half-increments
+      ></v-rating>
+      <v-card-title>This is title</v-card-title>
+      <v-card-text
+        >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sequi
+        consequuntur aspernatur veritatis culpa at corrupti incidunt fuga, modi
+        harum nostrum molestias alias sit similique delectus deleniti temporibus
+        iusto tempore!</v-card-text
+      >
+    </v-card>
+  </v-container>
+  <v-layout>
+    <v-footer class="bg-grey-darken-3 text-center d-flex flex-column">
+      <div>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          :icon="icon"
+          class="icon mx-4"
+          size="small"
+          variant="plain"
+        ></v-btn>
+      </div>
+
+      <div class="footer pt-0">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia velit
+        veritatis fugiat excepturi? Commodi neque odit esse incidunt distinctio
+        nesciunt impedit voluptas beatae ipsum, corrupti nobis modi qui aliquid
+        doloremque Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+        atque ipsam nobis rem velit?
+      </div>
+    </v-footer>
+  </v-layout>
 </template>
+<style lang="scss">
+form {
+  width: 50% !important;
+}
+.card_container {
+  gap: 5px !important;
+}
+</style>
 
 <script>
+import gsap from "gsap";
+
 export default {
+  data() {
+    return {
+      drawer: false,
+      group: null, // Placeholder for your 'group' reactive property
+      items: [
+        { title: "Home", value: "home" },
+        { title: "Account", value: "account" },
+        { title: "Blog", value: "blog" },
+        { title: "Image", value: "image" },
+      ],
+      icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+    };
+  },
   mounted() {
-    this.moveText();
+    // Example GSAP animations
+    gsap.to(".v-rating", {
+      duration: 3,
+      ease: "power3.out",
+      scale: 0.95,
+      repeat: -1,
+      yoyo: true,
+      repeatDelay: 0.5,
+    });
+
+    gsap.fromTo(
+      ".v-card-title,.icon",
+      {
+        y: 1,
+      },
+      {
+        duration: 1,
+        ease: "power3.out",
+        y: -4,
+        repeat: -1,
+        yoyo: true,
+        repeatDelay: 0.2,
+      }
+    );
+    gsap.fromTo(
+      ".icons",
+      {
+        scale: 1,
+      },
+      {
+        duration: 3,
+        ease: "power3.out",
+        scale: 0.85,
+        repeat: -1,
+        yoyo: true,
+        repeatDelay: 0.2,
+      }
+    );
+    gsap.from(".footer", {
+      opacity: 0,
+      x: -50,
+      duration: 3,
+      ease: "power3.out",
+      repeat: -1,
+      yoyo: true,
+      repeatDelay: 0.5,
+    });
+
+    gsap.from(".v-app-bar-title,.v-chip,.v-card", {
+      opacity: 0,
+      x: -50,
+      duration: 3,
+      ease: "power3.out",
+    });
   },
   methods: {
-    moveText() {
-      let text = document.getElementById("text");
-      let tree_left = document.getElementById("tree-left");
-      let tree_right = document.getElementById("tree-right");
-      let gate_left = document.getElementById("gate-left");
-      let gate_right = document.getElementById("gate-right");
-      window.addEventListener("scroll", () => {
-        let value = window.scrollY;
-        text.style.marginTop = value * 2.5 + `px`;
-        tree_left.style.left = value * -1.5 + `px`;
-        tree_right.style.left = value * 1.5 + `px`;
-        gate_left.style.left = value * 0.3 + `px`;
-        gate_right.style.left = value * -0.3 + `px`;
-      });
+    onOpen() {
+      gsap.fromTo(
+        ".v-list-item",
+        {
+          opacity: 0,
+          x: -50,
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 3,
+          ease: "power3.out",
+        }
+      );
     },
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.parallax {
-  position: relative;
-  height: 130vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("../assets/background.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  #text {
-    position: absolute;
-    font-size: 5em;
-    color: #1b283a;
-    text-shadow: 2px 4px 5px #f9f9f9;
-  }
-  img {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-  }
-  #gate-left {
-    position: absolute;
-    transform: translateX(-282px);
-  }
-  #gate-right {
-    position: absolute;
-    transform: translateX(305px);
-  }
-}
-.sec {
-  background-color: #020912;
-  position: relative;
-  padding: 30px 100px;
-  h2 {
-    color: #fff;
-    font-size: 3em;
-  }
-  p {
-    color: #fff;
-    font-size: 1em;
-    text-align: justify;
-  }
-}
-</style>
